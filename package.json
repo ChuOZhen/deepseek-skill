@@ -1,0 +1,35 @@
+{
+  "name": "deepseek-skill",
+  "version": "1.0.0",
+  "description": "Claude Skill for monitoring DeepSeek token usage, balance, and cache rate in CLI",
+  "main": "dist/index.js",
+  "bin": {
+    "deepseek-monitor": "dist/cli.js"
+  },
+  "scripts": {
+    "dev": "ts-node src/cli.ts",
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "watch": "tsc --watch"
+  },
+  "keywords": [
+    "deepseek",
+    "claude",
+    "skill",
+    "token-monitoring",
+    "cli"
+  ],
+  "author": "ChuOZhen",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "chalk": "^4.1.2",
+    "dotenv": "^16.3.1",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0",
+    "ts-node": "^10.9.0"
+  }
+}
